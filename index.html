@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        
+        <title>Form Validation</title>
+        </head>
+    <body>
+        <h1><span class="cf-gradient-span">Sign Up</span></h1>
+        <div class="container">
+            <form id="signup" class="form">
+                <div class="form-field">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" autocomplete="off">
+                    <small></small>
+                </div>
+    
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" autocomplete="off">
+                    <small></small>
+                </div>
+    
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                    <small></small>
+                </div>
+    
+    
+                <div class="form-field">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <div class="form-field input-group">
+                        <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        <small></small>
+                    </div>   
+                </div>
+    
+                <div class="form-field">
+                    <input class="btn" type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>

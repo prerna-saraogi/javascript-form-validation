@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #26282A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.cf-gradient-span{
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,#b16cea 20%, #ff5e69 60%, #ff8a56 80%, #ffa84b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 35px;
+}
+.container {
+    background-color: #fff;
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: solid 2px #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+.input-group{
+    position: relative;
+}
+
+.bi-eye-slash{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    cursor: pointer;
+    
+}
+
+/* button */
+.btn {
+    width: 75%;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: auto;
+    background: #ffa84b;
+    background-image: linear-gradient(to right,#b16cea 20%, #ff5e69 60%, #ff8a56 80%, #ffa84b);
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+    
+}
+
+.btn:focus {
+    outline: none;
+}
